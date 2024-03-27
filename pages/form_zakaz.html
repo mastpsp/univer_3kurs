@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма заявки на закупку мебели</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Форма заявки на закупку мебели</h1>
+    <form id="purchaseForm">
+        <label for="furnitureName">Название мебели:</label><br>
+        <input type="text" id="furnitureName" name="furnitureName" required><br>
+
+        <label for="furnitureType">Тип мебели:</label><br>
+        <input type="text" id="furnitureType" name="furnitureType" required><br>
+
+        <label for="dimensions">Размеры (ширина, длина, высота):</label><br>
+        <input type="text" id="dimensions" name="dimensions" required><br>
+
+        <label for="color">Цвет:</label><br>
+        <input type="text" id="color" name="color"><br>
+
+        <label for="material">Материал:</label><br>
+        <input type="text" id="material" name="material"><br>
+
+        <label for="quantity">Количество:</label><br>
+        <input type="number" id="quantity" name="quantity" required><br>
+
+        <label for="deliveryDate">Дата доставки:</label><br>
+        <input type="date" id="deliveryDate" name="deliveryDate" required><br>
+
+        <label for="deliveryAddress">Адрес доставки:</label><br>
+        <input type="text" id="deliveryAddress" name="deliveryAddress" required><br>
+
+        <label for="contactName">Имя:</label><br>
+        <input type="text" id="contactName" name="contactName" required><br>
+
+        <label for="contactEmail">E-mail:</label><br>
+        <input type="email" id="contactEmail" name="contactEmail" required><br>
+
+        <label for="contactPhone">Телефон:</label><br>
+        <input type="tel" id="contactPhone" name="contactPhone" required><br>
+
+        <input type="submit" value="Отправить заявку">
+    </form>
+    <script src="script_zakaz.js"></script>
+</body>
+</html>
