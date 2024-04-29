@@ -7,41 +7,87 @@
 <body>
     
     <form id="purchaseForm">
-        <label for="furnitureName">Название мебели:</label><br>
-        <input type="text" id="furnitureName" name="furnitureName" required><br>
+        <label for="furnitureName"><b>Название мебели:</b></label><br>
+        <input type="text" id="furnitureName" name="furnitureName" list="furnitureNameList" required><br>
 
-        <label for="furnitureType">Тип мебели:</label><br>
-        <input type="text" id="furnitureType" name="furnitureType" required><br>
+        <datalist id="furnitureNameList">
+            <option value="Угловой диван Стингер">
+            <option value="Кресло-кровать Айви">
+            <option value="Письменный стол Алтай">
+            <option value="угловой шкаф-купе Маршал">
+            <option value="Обеденная группа Апель">
+            <option value="Обувница Глосс"></option>
+        </datalist>
 
-        <label for="dimensions">Размеры (ширина, длина, высота):</label><br>
-        <input type="text" id="dimensions" name="dimensions" required><br>
+        <label for="furnitureType"><b>Тип мебели:</b></label><br>
+        <input type="text" id="furnitureType" name="furnitureType" list="furnitureTypeList" required><br>
 
-        <label for="color">Цвет:</label><br>
-        <input type="text" id="color" name="color"><br>
+        <datalist id="furnitureTypeList">
+            <option value="Диван">
+            <option value="Кресло-кровать">
+            <option value="Стол">
+            <option value="Шкаф">
+            <option value="Обеденная группа">
+            <option value="Обувница"></option>
+        </datalist>
 
-        <label for="material">Материал:</label><br>
-        <input type="text" id="material" name="material"><br>
+        <label for="width"><b>Ширина:</b></label><br>
+        <input type="number" id="width" name="width" required><br>
 
-        <label for="quantity">Количество:</label><br>
+        <label for="length"><b>Длина:</b></label><br>
+        <input type="number" id="length" name="length" required><br>
+
+        <label for="height"><b>Высота:</b></label><br>
+        <input type="number" id="height" name="height" required><br>
+
+        <label for="color"><b>Цвет:</b></label><br>
+        <input type="text" id="color" name="color" list="furnitureColorList"><br>
+
+        <datalist id="furnitureColorList">
+            <option value="Белый">
+            <option value="Чёрный">
+            <option value="Синий">
+            <option value="Красный">
+            <option value="Серый">
+            <option value="Коричневый"></option>
+        </datalist>
+
+        <label for="material"><b>Материал:</b></label><br>
+        <input type="text" id="material" name="material" list="furnitureMaterialList"><br>
+
+        <datalist id="furnitureMaterialList">
+            <option value="МДФ">
+            <option value="ДСП">
+            <option value="ЛДСП">
+        </datalist>
+
+        <label for="quantity"><b>Количество:</b></label><br>
         <input type="number" id="quantity" name="quantity" required><br>
 
-        <label for="deliveryDate">Дата доставки:</label><br>
+        <label for="deliveryDate"><b>Дата доставки:</b></label><br>
         <input type="date" id="deliveryDate" name="deliveryDate" required><br>
 
-        <label for="deliveryAddress">Адрес доставки:</label><br>
+        <label for="deliveryAddress"><b>Адрес доставки:</b></label><br>
         <input type="text" id="deliveryAddress" name="deliveryAddress" required><br>
 
-        <label for="contactName">Имя:</label><br>
+        <label for="contactName"><b>Имя:</b></label><br>
         <input type="text" id="contactName" name="contactName" required><br>
 
-        <label for="contactEmail">E-mail:</label><br>
+        <div class="password">
+            <label for="password-input"><b>Username(Если зарегистрированы, для начисления бонусов):</b></label><br>
+            <input type="password" id="password-input" placeholder="Введите Username" name="password">
+            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+        </div>
+
+        <label for="contactEmail"><b>E-mail:</b></label><br>
         <input type="email" id="contactEmail" name="contactEmail" required><br>
 
-        <label for="contactPhone">Телефон:</label><br>
-        <input type="tel" id="contactPhone" name="contactPhone" required><br>
+        <label for="contactPhone"><b>Телефон:</b></label><br>
+        <input type="tel" id="contactPhone" name="contactPhone" required>
 
         <input type="submit" value="Отправить заявку">
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
     <script src="../scripts/script_zakaz.js"></script>
 </body>
 </html>

@@ -4,7 +4,10 @@ body {
     /* Создает градиентный фон для всего документа */
     background: linear-gradient(to right, #ffffff, #e1e1e1);
     /* Устанавливает цвет текста для всего документа */
-    color: #333;
+    color: #000000;
+    font-size: 15px;
+    background-image: url("../images/background-form.jpg");
+
 }
 
 /* Стили для формы */
@@ -16,7 +19,7 @@ form {
     /* Внутренний отступ вокруг содержимого формы */
     padding: 20px;
     /* Фон формы */
-    background: #fff;
+    background: #f3ffd6;
     /* Скругление углов формы */
     border-radius: 10px;
     /* Добавляет тень вокруг формы */
@@ -25,8 +28,6 @@ form {
     display: flex;
     /* Указывает, что элементы должны быть расположены в колонку */
     flex-direction: column;
-    /* Центрирует элементы внутри формы по горизонтали */
-    /* align-items: center; */
 }
 
 /* Стили для меток */
@@ -37,9 +38,8 @@ label {
     margin-bottom: 5px;
     /* Выравнивает текст меток по левому краю */
     text-align: left;
+    white-space: nowrap;
 }
-
-
 
 /* Стили для полей ввода */
 input[type="text"],
@@ -47,7 +47,7 @@ input[type="number"],
 input[type="date"],
 input[type="email"],
 input[type="tel"] {
-    /* Устанавливает ширину полей ввода на 100% от ширины родительского элемента */
+    /* Устанавливает ширину полей ввода на 97% от ширины родительского элемента */
     width: 97%;
     /* Добавляет внутренний отступ внутри полей ввода */
     padding: 10px;
@@ -91,8 +91,32 @@ input[type="submit"]:hover {
     background: linear-gradient(to right, #feb47b, #ff7e5f);
 }
 
-/* Стили для кнопки отправки при нажатии */
-input[type="submit"]:active {
-    /* Изменяет размер кнопки при нажатии */
-    transform: scale(0.98);
+.password {
+	width: 300px;
+	position: relative;
+}
+#password-input {
+	width: 602px;
+	padding: 5px 0;
+	height: 30px;
+	line-height: 40px;
+	text-indent: 10px;
+	margin: 0 0 15px 0;
+    /* Устанавливает границу для полей ввода */
+	border: 1px solid #ddd;
+    /* Скругление углов полей ввода */
+    border-radius: 5px;
+	font-size: 18px;
+}
+.password-control {
+	position: absolute;
+    bottom: 22%;
+    left: 185%;
+    display: inline-block;
+    width: 13%;
+    height: 33%;
+    background: url(../images/eye-pass.gif) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(../images/eye-pass-hide.png) 0 0 no-repeat;
 }
