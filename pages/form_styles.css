@@ -1,13 +1,23 @@
-/* Устанавливает шрифт для всего документа */
+/* Стили для Body */
 body {
     font-family: Arial, sans-serif;
     /* Создает градиентный фон для всего документа */
     background: linear-gradient(to right, #ffffff, #e1e1e1);
     /* Устанавливает цвет текста для всего документа */
     color: #000000;
+    /* Размер шрифта */
     font-size: 15px;
+    /* Фон */
     background-image: url("../images/background-form.jpg");
 
+}
+
+/*Заголовок формы*/
+.form-title {
+    /* Выравнивание по центру */
+    text-align: center;
+    /* Размер шрифта */
+    font-size: 45px;
 }
 
 /* Стили для формы */
@@ -38,10 +48,11 @@ label {
     margin-bottom: 5px;
     /* Выравнивает текст меток по левому краю */
     text-align: left;
+    /* не позволяет тексту переносится естественным образом на новую строку */
     white-space: nowrap;
 }
 
-/* Стили для полей ввода */
+/* Стили для полей ввода с разным типом*/
 input[type="text"],
 input[type="number"],
 input[type="date"],
@@ -91,32 +102,57 @@ input[type="submit"]:hover {
     background: linear-gradient(to right, #feb47b, #ff7e5f);
 }
 
+
+/* Стили для контейнера пароля */
 .password {
+    /* Ширина контейнера */
 	width: 300px;
+    /* Позиционирование контейнера */
 	position: relative;
 }
+
+/* Стили для поля ввода пароля */
 #password-input {
+    /* Ширина поля ввода */
 	width: 602px;
+    /* Внутренние отступы поля ввода */
 	padding: 5px 0;
+    /* Высота поля ввода */
 	height: 30px;
+    /* Высота строки текста */
 	line-height: 40px;
+    /* Отступ первой строки текста */
 	text-indent: 10px;
+    /* Внешние отступы поля ввода */
 	margin: 0 0 15px 0;
-    /* Устанавливает границу для полей ввода */
+    /* Граница поля ввода */
 	border: 1px solid #ddd;
-    /* Скругление углов полей ввода */
+    /* Скругление углов поля ввода */
     border-radius: 5px;
+    /* Размер шрифта */
 	font-size: 18px;
 }
+
+/* Стили для кнопки отображения пароля */
 .password-control {
+    /* Позиционирование кнопки отображения пароля */
 	position: absolute;
+    /* Отступ от нижнего края контейнера */
     bottom: 17%;
+    /* Отступ от левого края контейнера */
     left: 185%;
+    /* Отображение кнопки как блочного элемента */
     display: inline-block;
+    /* Ширина кнопки */
     width: 14%;
+    /* Высота кнопки */
     height: 40%;
-    background: url(../images/eye-pass.gif) 0 0 no-repeat;
+    /* Фон кнопки отображения пароля */
+	background: url(../images/eye-pass.gif) 0 0 no-repeat;
 }
+
+/* Стили для кнопки скрытия пароля */
 .password-control.view {
+    /* Фон кнопки скрытия пароля */
 	background: url(../images/eye-pass-hide.png) 0 0 no-repeat;
 }

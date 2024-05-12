@@ -1,114 +1,121 @@
-/* Меню навигации*/
+/* Стили для навигационного меню */
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  list-style-type: none; /* Убираем маркеры у списка */
+  margin: 0; /* Убираем отступы у списка */
+  padding: 0; /* Убираем внутренние отступы у списка */
+  overflow: hidden; /* Создаем скрытую область для меню */
+  background-color: #333; /* Цвет фона меню */
 }
 
 nav li {
-  float: left;
-  width: 25%;
+  float: left; /* Выравниваем элементы списка горизонтально */
+  width: 25%; /* Устанавливаем ширину каждого элемента в 25% ширины родителя */
 }
 
 nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 5%;
-  text-decoration: none;
+  display: block; /* Делаем ссылки блочными элементами */
+  color: white; /* Цвет текста ссылок */
+  text-align: center; /* Выравниваем текст по центру */
+  padding: 5%; /* Добавляем отступы внутри ссылок */
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
 }
 
 nav li a:hover {
-  background-color: #111;
+  background-color: #111; /* Изменяем цвет фона при наведении на ссылку */
 }
 
+/* Стили для Header */
 .header {
-  z-index: 3;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  z-index: 3; /* Устанавливаем слой для элемента */
+  position: fixed; /* Фиксируем позицию элемента */
+  top: 0; /* Размещаем элемент вверху страницы */
+  left: 0; /* Размещаем элемент в левом углу */
+  width: 100%; /* Занимаем всю доступную ширину */
 }
 
-.header_company{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0.5%;
-    text-decoration: none;
-    text-align: right; /* Выравнивание текста по правому краю */
-    float: right; /* Выравнивание элемента по правому краю */
-    font-size: 36px;
-    font-weight: bold;
-    color: #141c76;
-    text-shadow: 0px 0px 0 #ccc, 1px 1px 0 #ffffff, 3px 3px 0 #7677c8;
+/* Стили для заголовка компании */
+.header_company {
+  display: block; /* Делаем элемент блочным */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  padding: 0.5%; /* Отступы внутри элемента */
+  text-align: right; /* Выравнивание текста по правому краю */
+  float: right; /* Выравнивание элемента по правому краю */
+  font-size: 36px; /* Размер шрифта */
+  font-weight: bold; /* Жирное начертание */
+  color: #141c76; /* Цвет текста */
+  text-shadow: 0px 0px 0 #ccc, 1px 1px 0 #ffffff, 3px 3px 0 #7677c8; /* Тень текста */
 }
 
-
+/* Стили для Body */
 body {
-  background-image: url("../images/fon.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: auto; /* размер одного повторяющегося изображения */
-  margin:0;
+  background-image: url("../images/fon.jpg"); /* Фоновое изображение */
+  width: 100%; /* Занимаем всю доступную ширину */
+  height: 100%; /* Занимаем всю доступную высоту */
+  background-size: auto; /* Размер фонового изображения */
+  margin: 0; /* Убираем внешние отступы */
 }
 
-/* Текстовые поля */
+/* Стили для текстовых полей */
 .text-field {
-width: 96%;
-height: 100%;
-margin-top: 5%;
-margin-left: 1%;
-background-color: #fae6cf;
-box-shadow: 0 0 14px rgba(2, 0, 10, 0.1);
-border-radius: 5%;
-padding-left: 1%;
-padding-right: 1%;
+  width: 96%; /* Ширина поля */
+  height: 100%; /* Высота поля */
+  margin-top: 5%; /* Внешний отступ сверху */
+  margin-left: 1%; /* Внешний отступ слева */
+  background-color: #fae6cf; /* Цвет фона */
+  box-shadow: 0 0 14px rgba(2, 0, 10, 0.1); /* Тень */
+  border-radius: 5%; /* Скругление углов */
+  padding-left: 1%; /* Внутренний отступ слева */
+  padding-right: 1%; /* Внутренний отступ справа */
 }
 
 .text-field h1 {
-text-align: center;
-color: #070707;
+  text-align: center; /* Выравнивание заголовка по центру */
+  color: #070707; /* Цвет текста */
 }
+
 
 .text-field p {
-color: #393838;
-line-height: 1.6;
-font-size: 25px;
+  color: #393838; /* Цвет текста */
+  line-height: 1.6; /* Межстрочный интервал */
+  font-size: 25px; /* Размер шрифта */
 }
 
+/* Стили для контейнера изображений */
 .image-container {
-  display: grid;
+  display: grid; /* Устанавливаем сетку для контейнера */
   grid-template-columns: 50% 50%; /* Две колонки одинаковой ширины */
   gap: 6%; /* Расстояние между колонками */
   height: 100%; /* Высота контейнера равна высоте окна просмотра */
 }
 
+/* Стили для изображения в зале 1 */
 .zal {
-  max-width: 90%;
-  height: 70%;
+  max-width: 90%; /* Максимальная ширина изображения */
+  height: 70%; /* Высота изображения */
   object-fit: cover; /* Изображение масштабируется, чтобы заполнить всю ячейку */
   transition: transform 0.3s ease; /* Добавляем плавный переход */
   background: linear-gradient(to right, #000, #fff); /* Градиент для фона */
   box-shadow: 0 0 50px rgba(255, 255, 0, 0.745); /* Тень для эффекта свечения */
-  border-radius: 10px; /* Опционально: скругление углов */
+  border-radius: 10px; /* Скругление углов */
 }
 
+/* Стили для изображения в зале 2 */
 .zal2 {
-  max-width: 120%;
-  max-height: 70%;
+  max-width: 120%; /* Максимальная ширина изображения */
+  max-height: 70%; /* Максимальная высота изображения */
   object-fit: cover; /* Изображение масштабируется, чтобы заполнить всю ячейку */
   transition: transform 0.3s ease; /* Добавляем плавный переход */
   background: linear-gradient(to right, #000, #fff); /* Градиент для фона */
   box-shadow: 0 0 50px rgba(255, 255, 0, 0.745); /* Тень для эффекта свечения */
-  border-radius: 10px; /* Опционально: скругление углов */
+  border-radius: 10px; /* Скругление углов */
 }
 
-.zal:hover, .zal2:hover {
+/* Эффекты при наведении на изображения */
+.zal:hover,
+.zal2:hover {
   transform: scale(1.05); /* Увеличиваем изображение на 5% */
-  box-shadow: 0 0 30px rgb(255, 123, 0);
+  box-shadow: 0 0 30px rgb(255, 123, 0); /* Изменяем тень при наведении */
 }
 
 /* Медиа-запрос для уменьшения масштаба */
@@ -118,139 +125,151 @@ font-size: 25px;
   }
 }
 
-
-
+/* Стили для модального окна */
 .modal {
   display: none; /* Скрываем модальное окно по умолчанию */
-  position: fixed;
-  z-index: 1;
+  position: fixed; /* Фиксируем позицию */
+  z-index: 1; /* Устанавливаем слой */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgba(255, 244, 141, 0.4); /* Черный фон с прозрачностью */
-  text-align: center;
+  text-align: center; /* Выравниваем текст по центру */
 }
 
 .modal-content {
-  background-color: #d4f8c8;
-  margin: 15% auto;
-  padding: 20px;
-  width: 80%;
+  background-color: #d4f8c8; /* Цвет фона контента модального окна */
+  margin: 15% auto; /* Внешние отступы */
+  padding: 20px; /* Внутренние отступы */
+  width: 80%; /* Ширина контента */
   box-shadow: 0 0 50px rgba(255, 255, 0, 0.745); /* Тень для эффекта свечения */
-  border-radius: 10px; /* Опционально: скругление углов */
+  border-radius: 10px; /* Скругление углов */
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  color: #aaa; /* Цвет текста кнопки закрытия */
+  float: right; /* Выравниваем кнопку закрытия справа */
+  font-size: 28px; /* Размер шрифта */
+  font-weight: bold; /* Жирное начертание */
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+  color: black; /* Изменяем цвет текста при наведении */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+  cursor: pointer; /* Изменяем курсор при наведении */
 }
 
-#map{
-  width: 100%;
-  height: 100%;
-  
+/* Стили для карты */
+#map {
+  width: 100%; /* Ширина карты */
+  height: 100%; /* Высота карты */
 }
-
 
 /* Страница с товарами */
 
+/* Стили для контейнера товаров */
 .product-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5%;
-  margin: 5%;
-  width: 90%; /* Увеличиваем ширину контейнера */
+  display: grid; /* Используем сетку для расположения товаров */
+  grid-template-columns: repeat(3, 1fr); /* Три колонки одинаковой ширины */
+  gap: 5%; /* Расстояние между товарами */
+  margin: 5%; /* Внешние отступы контейнера */
+  width: 90%; /* Ширина контейнера */
 }
+
+/* Стили для товара */
 .product {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  padding: 1%;
-  width: 100%;
-  background-color: rgba(255, 238, 86, 0.6);
+  display: flex; /* Используем flexbox для внутреннего расположения элементов товара */
+  flex-direction: column; /* Столбцовая ориентация элементов */
+  border: 1px solid #ccc; /* Граница товара */
+  padding: 1%; /* Внутренние отступы */
+  width: 100%; /* Ширина товара */
+  background-color: rgba(255, 238, 86, 0.6); /* Цвет фона товара */
   box-shadow: 0 0 50px rgba(255, 255, 0, 0.5); /* Тень для эффекта свечения */
 }
 
+/* Эффект при наведении на товар */
 .product:hover {
-  transform: scale(1.05); /* Увеличиваем изображение на 5% */
-  box-shadow: 0 0 30px rgb(255, 123, 0);
+  transform: scale(1.05); /* Увеличение размера товара на 5% */
+  box-shadow: 0 0 30px rgb(255, 123, 0); /* Изменение тени при наведении */
 }
 
+/* Стили для изображения товара */
 .product img {
-  width: 100%;
-  height: 300px;
-}
-.product-description {
-  flex-grow: 1;
+  width: 100%; /* Ширина изображения */
+  height: 300px; /* Высота изображения */
 }
 
+/* Стили для описания товара */
+.product-description {
+  flex-grow: 1; /* Растягиваем описание товара на всю доступную ширину */
+}
+
+/* Стили для модального окна товара */
 .modal-tovar {
   display: none; /* Скрываем модальное окно по умолчанию */
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(255, 244, 141, 0.4);
-  text-align: center;
+  position: fixed; /* Фиксируем позицию модального окна */
+  width: 100%; /* Ширина модального окна */
+  height: 100%; /* Высота модального окна */
+  overflow: auto; /* Включаем прокрутку при необходимости */
+  background-color: rgba(255, 244, 141, 0.4); /* Цвет фона модального окна */
+  text-align: center; /* Выравниваем текст по центру */
 }
 
+/* Стили для контента модального окна */
 .modal-content {
-  background-color: #d4f8c8;
-  margin: 15% auto;
-  padding: 20px;
-  width: 25%;
+  background-color: #d4f8c8; /* Цвет фона контента */
+  margin: 15% auto; /* Внешние отступы */
+  padding: 20px; /* Внутренние отступы */
+  width: 25%; /* Ширина контента */
   box-shadow: 0 0 50px rgba(255, 255, 0, 0.745); /* Тень для эффекта свечения */
-  border-radius: 10px;
+  border-radius: 10px; /* Скругление углов */
 }
 
+/* Стили для кнопки закрытия модального окна */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  color: #aaa; /* Цвет текста кнопки */
+  float: right; /* Выравнивание кнопки справа */
+  font-size: 28px; /* Размер шрифта */
+  font-weight: bold; /* Жирное начертание */
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+  color: black; /* Изменение цвета текста при наведении */
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer; /* Изменение курсора при наведении */
 }
 
+/* Стили для кнопки заказа */
 .order-button {
-  margin: 5% 25%; /* Обнуляем отступы */
-  display: inline-block;
-  white-space: nowrap; /* Запрещаем перенос строк внутри кнопки */
-  padding: 1% 20%;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  margin: 5% 25%; /* Отступы кнопки */
+  display: inline-block; /* Отображаем как блочный элемент */
+  white-space: nowrap; /* Запрещаем перенос строк */
+  padding: 1% 20%; /* Внутренние отступы */
+  font-size: 24px; /* Размер шрифта */
+  cursor: pointer; /* Изменяем курсор */
+  text-align: center; /* Выравниваем текст по центру */
+  text-decoration: none; /* Убираем подчеркивание */
+  outline: none; /* Убираем контур кнопки */
+  color: #fff; /* Цвет текста */
+  background-color: #4CAF50; /* Цвет фона */
+  border: none; /* Убираем границы */
+  border-radius: 15px; /* Скругляем углы */
+  box-shadow: 0 9px #999; /* Тень кнопки */
 }
 
+/* Эффект при наведении на кнопку заказа */
 .order-button:hover {
-  background-color: #3e8e41
+  background-color: #3e8e41; /* Изменяем цвет фона при наведении */
 }
 
+
+/* Эффект при активации кнопки заказа */
 .order-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  background-color: #3e8e41; /* Изменяем цвет фона */
+  box-shadow: 0 5px #666; /* Тень при нажатии */
+  transform: translateY(4px); /* Смещаем кнопку вниз при нажатии */
 }
