@@ -110,11 +110,11 @@ input[type="submit"]:hover {
 }
 .password-control {
 	position: absolute;
-    bottom: 22%;
+    bottom: 17%;
     left: 185%;
     display: inline-block;
-    width: 13%;
-    height: 33%;
+    width: 14%;
+    height: 40%;
     background: url(../images/eye-pass.gif) 0 0 no-repeat;
 }
 .password-control.view {
